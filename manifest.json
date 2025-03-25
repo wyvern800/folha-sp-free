@@ -1,18 +1,26 @@
 {
   "manifest_version": 3,
   "name": "folha-sp-free",
-  "version": "1.0",
-  "description": "Cansado de não conseguir ler as notícias do site folha-sp ? sua solução chegou!",
+  "version": "1.2",
+  "description": "Cansado de não conseguir ler as notícias do site folha-sp? Sua solução chegou!",
   "permissions": [
-    "tabs"
+    "tabs",
+    "activeTab",
+    "declarativeNetRequest",
+    "https://*/*"
   ],
-  "action": {
-    "default_popup": "popup.html"
+  "background": {
+    "service_worker": "background.js"
   },
   "content_scripts": [
     {
-      "matches": ["https://www1.folha.uol.com.br/*"],
-      "js": ["content.js"]
+      "matches": [
+        "https://www1.folha.uol.com.br/*",
+        "https://f5.folha.uol.com.br/*",
+        "*://www1.folha.uol.com.br/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_end"
     }
   ],
   "icons": {
