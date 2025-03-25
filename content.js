@@ -36,5 +36,5 @@ function manipulateComponents() {
   }
 }
 
-const intervalTime = 2000; // 2 seconds
+const intervalTime = 1000; // 2 seconds
 setInterval(manipulateComponents, intervalTime);
