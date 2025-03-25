@@ -7,7 +7,6 @@
     "tabs",
     "activeTab",
     "declarativeNetRequest",
-    "https://*/*"
   ],
   "background": {
     "service_worker": "background.js"
