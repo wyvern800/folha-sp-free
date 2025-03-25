@@ -18,6 +18,7 @@ const componentsToRemove = [
   { name: "c-subscribe-ads__description", className: "c-subscribe-ads__description" },
   { name: "comments-tooltip--blue", className: "comments-tooltip--blue" },
   { name: "c-subscribe-ads", className: "c-subscribe-ads" },
+  { name: "c-subscribe-ads--azul", className: "c-subscribe-ads--azul" },
 ];
 
 function manipulateComponents() {
